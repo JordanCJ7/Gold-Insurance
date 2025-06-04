@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #222;
+}
+header {
+    background: #ffd700;
+    padding: 20px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    color: #333;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #bfa100;
+}
+.slider {
+    position: relative;
+    max-width: 900px;
+    margin: 30px auto 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background: #fff;
+}
+.slides img {
+    width: 100%;
+    display: none;
+}
+.slides img.active {
+    display: block;
+}
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.slider .prev {
+    left: 10px;
+}
+.slider .next {
+    right: 10px;
+}
+.overview, .packages, .feedback, .contact, .about {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.package-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.package {
+    flex: 1 1 250px;
+    background: #faf3c0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+input, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+button[type="submit"] {
+    background: #ffd700;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+button[type="submit"]:hover {
+    background: #bfa100;
+    color: #fff;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+#feedbackList {
+    margin-top: 30px;
+}
+#feedbackList .feedback-item {
+    background: #faf3c0;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
