@@ -1,0 +1,164 @@
+// Overview section
+.overview {
+  @include section-container;
+  margin-top: 40px;
+  text-align: center;
+  background: linear-gradient(120deg, $light-cream 60%, rgba(255, 215, 0, 0.13) 100%);
+  box-shadow: 0 2px 12px rgba(191, 161, 0, 0.07);
+  border-radius: 18px;
+  
+  h2 {
+    font-size: $font-size-h2;
+    color: $primary-color-dark;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: $font-size-larger;
+    color: $text-color-medium;
+    margin-bottom: 0;
+  }
+}
+
+// Homepage highlights
+.homepage-highlights {
+  display: flex;
+  justify-content: center;
+  gap: $spacing-xlarge;
+  margin: 40px 0 20px 0;
+  flex-wrap: wrap;
+  
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.highlight {
+  @include card;
+  width: 260px;
+  @include card-hover;
+  
+  @include tablet {
+    width: 90%;
+    margin-bottom: 18px;
+  }
+}
+
+.highlight-icon {
+  @include circular-image(180px);
+  margin-bottom: 12px;
+}
+
+// Homepage CTA
+.homepage-cta {
+  margin: 30px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.cta-btn {
+  background: $primary-color;
+  color: $text-color-dark;
+  padding: 12px 32px;
+  border-radius: $border-radius-button;
+  font-size: $font-size-large;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.2);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  
+  &:hover {
+    background: $primary-color-dark;
+    color: $white;
+    box-shadow: 0 4px 16px rgba(191, 161, 0, 0.33);
+  }
+  
+  &.secondary {
+    background: $white;
+    color: $primary-color-dark;
+    border: 2px solid $primary-color;
+    
+    &:hover {
+      background: $primary-color;
+      color: $text-color-dark;
+    }
+  }
+}
+
+// Homepage features
+.homepage-features {
+  max-width: $container-width;
+  margin: 40px auto 0 auto;
+  background: $light-cream;
+  border-radius: $border-radius-xlarge;
+  box-shadow: $box-shadow-gold-light;
+  padding: $spacing-xlarge $spacing-large;
+  text-align: center;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0 0;
+  
+  li {
+    font-size: $font-size-large;
+    margin-bottom: 14px;
+    color: $text-color-medium;
+    text-align: left;
+    @include list-item-with-icon('★');
+  }
+}
+
+// Homepage feedback
+.homepage-feedback {
+  max-width: $container-width;
+  margin: 40px auto 40px auto;
+  background: $white;
+  border-radius: $border-radius-xlarge;
+  box-shadow: $box-shadow-gold-light;
+  padding: $spacing-xlarge $spacing-large;
+  text-align: center;
+}
+
+.feedback-sample {
+  display: flex;
+  flex-direction: row;
+  gap: $spacing-xlarge;
+  justify-content: center;
+  margin: 24px 0 18px 0;
+  flex-wrap: wrap;
+  
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  blockquote {
+    background: $light-cream;
+    border-left: 5px solid $primary-color;
+    border-radius: $border-radius-medium;
+    padding: 18px 20px 12px 20px;
+    font-style: italic;
+    color: $text-color-light;
+    margin: 0;
+    min-width: 220px;
+    max-width: 340px;
+    box-shadow: 0 1px 6px rgba(255, 215, 0, 0.13);
+    
+    @include tablet {
+      width: 90%;
+      margin-bottom: 18px;
+    }
+    
+    span {
+      display: block;
+      margin-top: 10px;
+      font-size: $font-size-base;
+      color: $primary-color-dark;
+      font-weight: bold;
+    }
+  }
+}
