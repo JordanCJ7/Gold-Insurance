@@ -31,6 +31,15 @@ header h1 {
     text-shadow: 1px 1px 8px #fffbe6;
     flex-shrink: 0;
 }
+header h1 a.header-home-link {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+header h1 a.header-home-link:hover {
+    color: #bfa100;
+    text-decoration: underline;
+}
 nav {
     margin-top: 0;
     margin-left: 600px;
