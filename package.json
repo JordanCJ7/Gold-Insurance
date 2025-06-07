@@ -1,0 +1,26 @@
+{
+  "name": "nobletrust",
+  "version": "1.0.0",
+  "description": "aa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass css/scss/main.scss css/styles.css",
+    "sass:watch": "sass --watch css/scss/main.scss css/styles.css",
+    "build": "sass css/scss/main.scss css/styles.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordanCJ7/NobleTrust.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JordanCJ7/NobleTrust/issues"
+  },
+  "homepage": "https://github.com/JordanCJ7/NobleTrust#readme",
+  "devDependencies": {
+    "sass": "^1.89.1"
+  }
+}
