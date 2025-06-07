@@ -1,0 +1,72 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin card {
+  background: $light-cream;
+  border-radius: $border-radius-xlarge;
+  box-shadow: $box-shadow-gold-light;
+  padding: $spacing-large $spacing-medium $spacing-medium $spacing-medium;
+  text-align: center;
+}
+
+@mixin card-hover {
+  transition: transform 0.2s, box-shadow 0.2s;
+  
+  &:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: $box-shadow-gold-hover;
+  }
+}
+
+@mixin section-container {
+  max-width: $container-width;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: $border-radius-medium;
+  box-shadow: $box-shadow-medium;
+  position: relative;
+  z-index: 20;
+  margin-top: 0;
+}
+
+@mixin circular-image($size) {
+  width: $size;
+  height: $size;
+  object-fit: contain;
+  border-radius: 50%;
+  background: $white;
+  box-shadow: 0 1px 4px rgba(255, 215, 0, 0.2);
+}
+
+@mixin list-item-with-icon($icon) {
+  position: relative;
+  padding-left: 20px;
+  
+  &:before {
+    content: '#{$icon}';
+    color: $primary-color-dark;
+    position: absolute;
+    left: 0;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
