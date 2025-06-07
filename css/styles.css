@@ -38,7 +38,7 @@ header h1 a.header-home-link {
 }
 header h1 a.header-home-link:hover {
     color: #bfa100;
-    text-decoration: underline;
+    text-decoration: none;
 }
 nav {
     margin-top: 0;
