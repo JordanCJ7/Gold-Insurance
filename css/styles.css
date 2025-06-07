@@ -94,8 +94,10 @@ nav a.active, nav a:hover {
 }
 .package-list {
     display: flex;
-    gap: 20px;
+    gap: 32px;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 32px;
 }
 .package {
     flex: 1 1 250px;
@@ -104,6 +106,73 @@ nav a.active, nav a:hover {
     border-radius: 8px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.05);
     margin-bottom: 20px;
+}
+.package.modern {
+    background: #fffbe6;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px #ffd70033;
+    padding: 32px 24px 24px 24px;
+    text-align: center;
+    width: 320px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    margin-bottom: 24px;
+}
+.package.modern:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 6px 24px #ffd70055;
+}
+.package-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 16px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 4px #ffd70033;
+}
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0 18px 0;
+    text-align: left;
+}
+.package-features li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #444;
+    padding-left: 20px;
+    position: relative;
+}
+.package-features li:before {
+    content: '✔';
+    color: #bfa100;
+    position: absolute;
+    left: 0;
+    font-size: 1rem;
+}
+.packages-intro {
+    text-align: center;
+    font-size: 1.15rem;
+    color: #555;
+    margin-bottom: 18px;
+}
+.packages-cta {
+    margin: 40px auto 0 auto;
+    text-align: center;
+    background: #fffbe6;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px #ffd70022;
+    padding: 28px 18px 18px 18px;
+    max-width: 700px;
+}
+.packages-cta h3 {
+    color: #bfa100;
+    margin-bottom: 10px;
+}
+.packages-cta p {
+    font-size: 1.1rem;
+    color: #444;
 }
 form {
     display: flex;
@@ -312,5 +381,12 @@ html, body {
     .highlight {
         width: 90%;
         margin-bottom: 18px;
+    }
+    .package-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .package.modern {
+        width: 90%;
     }
 }
