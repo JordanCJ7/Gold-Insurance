@@ -1,0 +1,92 @@
+.packages {
+  @include section-container;
+}
+
+.packages-intro {
+  text-align: center;
+  font-size: 1.15rem;
+  color: $text-color-light;
+  margin-bottom: 18px;
+}
+
+.package-list {
+  display: flex;
+  gap: $spacing-xlarge;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: $spacing-xlarge;
+  
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.package {
+  flex: 1 1 250px;
+  background: $cream;
+  padding: 20px;
+  border-radius: $spacing-small;
+  box-shadow: $box-shadow-light;
+  margin-bottom: 20px;
+  
+  &.modern {
+    background: $light-cream;
+    border-radius: $border-radius-xlarge;
+    box-shadow: $box-shadow-gold-light;
+    padding: $spacing-xlarge $spacing-large $spacing-large $spacing-large;
+    text-align: center;
+    width: 320px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    margin-bottom: 24px;
+    
+    &:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: $box-shadow-gold-hover;
+    }
+    
+    @include tablet {
+      width: 90%;
+    }
+  }
+}
+
+.package-icon {
+  @include circular-image(70px);
+  margin-bottom: $spacing-medium;
+}
+
+.package-features {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 18px 0;
+  text-align: left;
+  
+  li {
+    font-size: $font-size-base;
+    margin-bottom: 10px;
+    color: $text-color-medium;
+    @include list-item-with-icon('✔');
+  }
+}
+
+.packages-cta {
+  margin: 40px auto 0 auto;
+  text-align: center;
+  background: $light-cream;
+  border-radius: $border-radius-large;
+  box-shadow: $box-shadow-gold-light;
+  padding: 28px 18px 18px 18px;
+  max-width: 700px;
+  
+  h3 {
+    color: $primary-color-dark;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: $font-size-large;
+    color: $text-color-medium;
+  }
+}
