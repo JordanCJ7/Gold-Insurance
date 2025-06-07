@@ -1,0 +1,49 @@
+// Colors
+$primary-color: #ffd700;
+$primary-color-dark: #bfa100;
+$background-color: #f8f8f8;
+$text-color: #222;
+$text-color-dark: #333;
+$text-color-medium: #444;
+$text-color-light: #555;
+$light-cream: #fffbe6;
+$cream: #faf3c0;
+$white: #fff;
+$dark: #333;
+
+// Fonts
+$font-family: Arial, sans-serif;
+$font-size-base: 1rem;
+$font-size-large: 1.1rem;
+$font-size-larger: 1.2rem;
+$font-size-h1: 2.5rem;
+$font-size-h2: 2.2rem;
+
+// Spacing
+$spacing-small: 8px;
+$spacing-medium: 16px;
+$spacing-large: 24px;
+$spacing-xlarge: 32px;
+$spacing-xxlarge: 40px;
+
+// Border Radius
+$border-radius-small: 4px;
+$border-radius-medium: 10px;
+$border-radius-large: 14px;
+$border-radius-xlarge: 16px;
+$border-radius-xxlarge: 20px;
+$border-radius-button: 24px;
+
+// Box Shadows
+$box-shadow-light: 0 1px 4px rgba(0, 0, 0, 0.05);
+$box-shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.07);
+$box-shadow-gold-light: 0 2px 12px rgba(255, 215, 0, 0.13);
+$box-shadow-gold-medium: 0 2px 12px rgba(255, 215, 0, 0.2);
+$box-shadow-gold-hover: 0 6px 24px rgba(255, 215, 0, 0.33);
+
+// Breakpoints
+$breakpoint-mobile: 700px;
+$breakpoint-tablet: 900px;
+
+// Container
+$container-width: 900px;
