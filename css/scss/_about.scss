@@ -70,7 +70,7 @@
 }
 
 .about-service-icon {
-  @include circular-image(90px);
+  @include circular-image(180px);
   margin-bottom: 10px;
   background: $light-cream;
 }
@@ -103,8 +103,8 @@
 }
 
 .about-team-icon {
-  width: 90px;
-  height: 90px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   margin-bottom: 10px;
   border-radius: 50%;
