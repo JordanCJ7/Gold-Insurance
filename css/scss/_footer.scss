@@ -1,0 +1,18 @@
+footer {
+  background: $dark;
+  color: $white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  margin-top: auto;
+  flex-shrink: 0;
+  
+  @include mobile {
+    height: auto;
+    min-height: 60px;
+  }
+}
