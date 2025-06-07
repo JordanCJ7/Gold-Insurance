@@ -1,0 +1,15 @@
+// Basic reset and global styles
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  background: $background-color;
+  color: $text-color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
