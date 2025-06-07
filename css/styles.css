@@ -473,4 +473,193 @@ html, body {
     .contact-map iframe {
         height: 160px;
     }
+    .feedback-sample {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feedback-sample blockquote {
+        width: 90%;
+        margin-bottom: 18px;
+    }
+}
+/* Feedback page enhancements */
+.feedback-intro {
+    text-align: center;
+    font-size: 1.15rem;
+    color: #555;
+    margin-bottom: 18px;
+}
+.feedback-sample {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+    margin: 24px 0 18px 0;
+    flex-wrap: wrap;
+}
+.feedback-sample blockquote {
+    background: #fffbe6;
+    border-left: 5px solid #ffd700;
+    border-radius: 10px;
+    padding: 18px 20px 12px 20px;
+    font-style: italic;
+    color: #555;
+    margin: 0;
+    min-width: 220px;
+    max-width: 340px;
+    box-shadow: 0 1px 6px #ffd70022;
+}
+.feedback-sample span {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #bfa100;
+    font-weight: bold;
+}
+#feedbackForm {
+    max-width: 500px;
+    margin: 32px auto 0 auto;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px #ffd70022;
+    padding: 28px 24px 18px 24px;
+}
+#feedbackForm h3 {
+    color: #bfa100;
+    margin-bottom: 12px;
+    text-align: center;
+}
+#feedbackForm label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+#feedbackForm input,
+#feedbackForm textarea {
+    margin-bottom: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+#feedbackForm button[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+}
+#feedbackList {
+    margin-top: 30px;
+}
+#feedbackList .feedback-item {
+    background: #faf3c0;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.feedback-cta {
+    margin: 36px 0 0 0;
+    text-align: center;
+}
+.feedback-cta .cta-btn {
+    margin: 0 8px;
+}
+/* About page enhancements */
+.about-intro {
+    text-align: center;
+    font-size: 1.15rem;
+    color: #555;
+    margin-bottom: 18px;
+}
+.about-mission-vision, .about-values, .about-history, .about-services, .about-team, .about-commitment {
+    margin: 32px 0 0 0;
+    background: #fffbe6;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px #ffd70033;
+    padding: 28px 24px 18px 24px;
+}
+.about-mission-vision h3, .about-values h3, .about-history h3, .about-services h3, .about-team h3, .about-commitment h3 {
+    color: #bfa100;
+    margin-bottom: 10px;
+}
+.about-values ul {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0 0 0;
+}
+.about-values li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #444;
+    padding-left: 20px;
+    position: relative;
+}
+.about-values li:before {
+    content: '✔';
+    color: #bfa100;
+    position: absolute;
+    left: 0;
+    font-size: 1.1rem;
+}
+.about-services-list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 18px;
+}
+.about-service {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px #ffd70022;
+    padding: 18px 14px 14px 14px;
+    text-align: center;
+    width: 220px;
+    margin-bottom: 18px;
+}
+.about-service-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background: #fffbe6;
+    box-shadow: 0 1px 4px #ffd70033;
+}
+.about-team-list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 18px;
+}
+.about-team-member {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px #ffd70022;
+    padding: 18px 14px 14px 14px;
+    text-align: center;
+    width: 180px;
+    margin-bottom: 18px;
+}
+.about-team-icon {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background: #fffbe6;
+    box-shadow: 0 1px 4px #ffd70033;
+}
+.about-cta {
+    margin: 36px 0 0 0;
+    text-align: center;
+}
+.about-cta .cta-btn {
+    margin: 0 8px;
+}
+@media (max-width: 900px) {
+    .about-services-list, .about-team-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-service, .about-team-member {
+        width: 90%;
+        margin-bottom: 18px;
+    }
 }
