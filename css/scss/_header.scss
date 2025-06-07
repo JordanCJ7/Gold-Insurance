@@ -1,17 +1,43 @@
-header {
-  display: flex;
+header {  display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  background: linear-gradient(90deg, $primary-color 60%, $light-cream 100%);
-  box-shadow: $box-shadow-medium;
-  padding: 20px 40px;
+  flex-wrap: wrap;  background: linear-gradient(90deg, rgba($primary-color, 0.4) 60%, rgba($light-cream, 0.4) 100%);  box-shadow: $box-shadow-medium;
+  padding: 0px 20px;
   position: relative;
   top: 0;
   left: 0;
-  width: 100%;
-  box-sizing: border-box;
+  width: 100%;  box-sizing: border-box;
   z-index: 100;
-  height: 80px;
+  height: 110px;&.home-header {
+    background: transparent;
+    box-shadow: none;
+    
+    h1 {
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+      
+      a.header-home-link {
+        color: white;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+      }
+    }
+    
+    nav a {
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.3);
+      
+      &:hover {
+        background: $primary-color-dark;
+        text-shadow: none;
+      }
+    }
+  }
+  
+  .header-logo {
+    height: 140px;
+    margin-right: 15px;
+    vertical-align: middle;
+  }
   
   h1 {
     margin: 0;
@@ -63,9 +89,14 @@ nav {
 @include mobile {
   header {
     flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-    padding: 10px;
+    align-items: center;
+    height: auto;    padding: 15px 10px;
+    
+    .header-logo {
+      height: 90px;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
   }
   
   nav {
