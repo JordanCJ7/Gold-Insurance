@@ -7,7 +7,13 @@ header {  display: flex;
   left: 0;
   width: 100%;  box-sizing: border-box;
   z-index: 100;
-  height: 110px;&.home-header {
+  height: 110px;
+  
+  a {
+    &:focus {
+      outline: none;
+    }
+  }&.home-header {
     background: transparent;
     box-shadow: none;
     
@@ -32,11 +38,18 @@ header {  display: flex;
       }
     }
   }
-  
-  .header-logo {
+    .header-logo {
     height: 140px;
     margin-right: 15px;
     vertical-align: middle;
+  }
+  
+  a img.header-logo {
+    transition: transform 0.2s ease;
+    
+    &:hover {
+      transform: scale(1.03);
+    }
   }
   
   h1 {
