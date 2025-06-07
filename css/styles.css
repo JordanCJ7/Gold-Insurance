@@ -31,15 +31,23 @@ nav a:hover {
 }
 .slider {
     position: relative;
-    max-width: 900px;
-    margin: 30px auto 0 auto;
+    width: 100vw;
+    height: 60vh;
+    max-width: 100vw;
+    min-height: 350px;
+    margin: 0;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     background: #fff;
 }
 .slides img {
-    width: 100%;
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
     display: none;
 }
 .slides img.active {
