@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NobleTrust</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Ensure overlay appears immediately -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show overlay immediately on page load
+            const overlay = document.querySelector('.page-transition-overlay');
+            if (overlay) overlay.classList.add('active');
+        });
+    </script>
     <script defer src="js/scripts.js"></script>
 </head>
-<body>    <header class="home-header">
+<body>    
+    <div class="page-transition-overlay">
+        <div class="loader"><div></div><div></div></div>
+    </div>
+    <header class="home-header">
         <a href="index.html"><img src="images/Logo.png" alt="NobleTrust Logo" class="header-logo"></a>
         <h1><a href="index.html" class="header-home-link">NobleTrust</a></h1>
         <nav>
