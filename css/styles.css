@@ -373,6 +373,79 @@ html, body {
     color: #bfa100;
     font-weight: bold;
 }
+/* Contact page enhancements */
+.contact-info {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin: 32px 0 24px 0;
+    flex-wrap: wrap;
+}
+.contact-card {
+    background: #fffbe6;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px #ffd70033;
+    padding: 24px 18px 18px 18px;
+    text-align: center;
+    min-width: 180px;
+    flex: 1 1 180px;
+}
+.contact-card h3 {
+    color: #bfa100;
+    margin-bottom: 8px;
+}
+.contact-card a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.contact-card a:hover {
+    color: #bfa100;
+}
+.contact-form-area {
+    max-width: 500px;
+    margin: 0 auto 32px auto;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px #ffd70022;
+    padding: 28px 24px 18px 24px;
+}
+.contact-form-area h3 {
+    color: #bfa100;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.contact-form-area form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.contact-form-area form input,
+.contact-form-area form textarea {
+    margin-bottom: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.contact-form-area form button[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+}
+.contact-map {
+    max-width: 600px;
+    margin: 32px auto 0 auto;
+    text-align: center;
+}
+.contact-map h3 {
+    color: #bfa100;
+    margin-bottom: 10px;
+}
+.contact-cta {
+    margin: 36px 0 0 0;
+    text-align: center;
+}
+.contact-cta .cta-btn {
+    margin: 0 8px;
+}
 @media (max-width: 900px) {
     .homepage-highlights, .feedback-sample {
         flex-direction: column;
@@ -388,5 +461,16 @@ html, body {
     }
     .package.modern {
         width: 90%;
+    }
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-card {
+        width: 90%;
+        margin-bottom: 18px;
+    }
+    .contact-map iframe {
+        height: 160px;
     }
 }
