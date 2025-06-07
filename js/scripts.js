@@ -1,8 +1,6 @@
 // Image slider for Home Page
 window.addEventListener('DOMContentLoaded', function() {
     const slides = document.querySelectorAll('.slides img');
-    const prevBtn = document.querySelector('.slider .prev');
-    const nextBtn = document.querySelector('.slider .next');
     let current = 0;
     if (slides.length > 0) {
         slides[current].classList.add('active');
@@ -11,9 +9,7 @@ window.addEventListener('DOMContentLoaded', function() {
             current = (idx + slides.length) % slides.length;
             slides[current].classList.add('active');
         }
-        prevBtn.addEventListener('click', () => showSlide(current - 1));
-        nextBtn.addEventListener('click', () => showSlide(current + 1));
-        setInterval(() => showSlide(current + 1), 4000);
+        setInterval(() => showSlide(current + 1), 3000);
     }
 
     // Feedback form logic
