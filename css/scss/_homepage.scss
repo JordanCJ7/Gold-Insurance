@@ -1,7 +1,7 @@
 // Overview section
 .overview {
   @include section-container;
-  margin-top: 40px;
+  margin-top: 100vh; // Adjust this to match the slider height
   text-align: center;
   background: linear-gradient(120deg, $light-cream 60%, rgba(255, 215, 0, 0.13) 100%);
   box-shadow: 0 2px 12px rgba(191, 161, 0, 0.07);
