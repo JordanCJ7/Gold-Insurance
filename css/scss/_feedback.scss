@@ -1,0 +1,62 @@
+.feedback {
+  @include section-container;
+}
+
+.feedback-intro {
+  text-align: center;
+  font-size: 1.15rem;
+  color: $text-color-light;
+  margin-bottom: 18px;
+}
+
+#feedbackForm {
+  max-width: 500px;
+  margin: 32px auto 0 auto;
+  background: $white;
+  border-radius: $border-radius-large;
+  box-shadow: $box-shadow-gold-light;
+  padding: 28px 24px 18px 24px;
+  
+  h3 {
+    color: $primary-color-dark;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  input,
+  textarea {
+    margin-bottom: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+#feedbackList {
+  margin-top: 30px;
+  
+  .feedback-item {
+    background: $cream;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+}
+
+.feedback-cta {
+  margin: 36px 0 0 0;
+  text-align: center;
+  
+  .cta-btn {
+    margin: 0 8px;
+  }
+}
