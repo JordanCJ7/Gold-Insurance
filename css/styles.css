@@ -18,16 +18,42 @@ header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  background: linear-gradient(90deg, #ffd700 60%, #fffbe6 100%);
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.4) 60%, rgba(255, 251, 230, 0.4) 100%);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-  padding: 20px 40px;
+  padding: 0px 20px;
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   box-sizing: border-box;
   z-index: 100;
-  height: 80px;
+  height: 110px;
+}
+header.home-header {
+  background: transparent;
+  box-shadow: none;
+}
+header.home-header h1 {
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+header.home-header h1 a.header-home-link {
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+header.home-header nav a {
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+header.home-header nav a:hover {
+  background: #bfa100;
+  text-shadow: none;
+}
+header .header-logo {
+  height: 140px;
+  margin-right: 15px;
+  vertical-align: middle;
 }
 header h1 {
   margin: 0;
@@ -73,9 +99,14 @@ nav a.active, nav a:hover {
 @media (max-width: 700px) {
   header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     height: auto;
-    padding: 10px;
+    padding: 15px 10px;
+  }
+  header .header-logo {
+    height: 90px;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
   nav {
     margin-top: 10px;
@@ -109,7 +140,7 @@ footer {
 }
 
 .slider {
-  position: relative;
+  position: absolute;
   width: 100%;
   max-width: 100vw;
   min-height: 100vh;
@@ -118,7 +149,9 @@ footer {
   transform: none;
   border-radius: 0;
   box-shadow: none;
-  z-index: 1;
+  z-index: 0;
+  top: 0;
+  left: 0;
 }
 .slider button {
   display: none !important;
@@ -135,10 +168,13 @@ footer {
   }
 }
 
+.slides {
+  width: 100%;
+  height: 100vh;
+}
 .slides img {
   width: 100vw;
-  height: 100%;
-  max-height: 100%;
+  height: 100vh;
   object-fit: cover;
   display: none;
 }
@@ -164,7 +200,7 @@ footer {
   position: relative;
   z-index: 20;
   margin-top: 0;
-  margin-top: 40px;
+  margin-top: 100vh;
   text-align: center;
   background: linear-gradient(120deg, #fffbe6 60%, rgba(255, 215, 0, 0.13) 100%);
   box-shadow: 0 2px 12px rgba(191, 161, 0, 0.07);
@@ -709,8 +745,8 @@ footer {
 }
 
 .about-service-icon {
-  width: 90px;
-  height: 90px;
+  width: 180px;
+  height: 180px;
   object-fit: contain;
   border-radius: 50%;
   background: #fff;
@@ -749,8 +785,8 @@ footer {
 }
 
 .about-team-icon {
-  width: 90px;
-  height: 90px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   margin-bottom: 10px;
   border-radius: 50%;
