@@ -29,6 +29,9 @@ header {
   z-index: 100;
   height: 110px;
 }
+header a:focus {
+  outline: none;
+}
 header.home-header {
   background: transparent;
   box-shadow: none;
@@ -54,6 +57,12 @@ header .header-logo {
   height: 140px;
   margin-right: 15px;
   vertical-align: middle;
+}
+header a img.header-logo {
+  transition: transform 0.2s ease;
+}
+header a img.header-logo:hover {
+  transform: scale(1.03);
 }
 header h1 {
   margin: 0;
